@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cinema Finder</title>
+</head>
+<body>
+    <h1>Cinema Finder</h1>
+
+    <div id="search-form-container">
+        <div class="control-container">
+            <label for="title">Заголовок:</label>
+            <input
+                type="search"
+                id="title"
+                placeholder="Введите заголовок"
+                title="Заголовок должен состоять и начинаться с букв или цифр и может иметь пробелы и знаки пунктуации"
+            >
+        </div>
+
+        <div class="control-container">
+            <label for="type">Тип:</label>
+            <select id="type">
+                <option value="ALL">Все типы</option>
+                <option value="FILM" selected>Фильмы</option>
+                <option value="TV_SERIES">Сериалы</option>
+                <option value="MINI_SERIES">Мини Сериалы</option>
+                <option value="TV_SHOW">ТВ Шоу</option>
+            </select>
+        </div>
+
+        <button id="search-button">Поиск</button>
+    </div>
+
+    <p id="status-output"></p>
+
+    <div id="search-results-container"></div>
+
+</body>
+</html>
